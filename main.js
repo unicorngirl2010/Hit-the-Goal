@@ -27,18 +27,16 @@ function load_img() {
 
 function new_image() {
 	// write code to Upload ball image on canvas
-	function new_image() {
 
-		fabric.Image.fromURL("ball.png", function (Img) {
-			ball_obj = Img;
-			ball_obj.scaleToWidth(50);
-			ball_obj.scaleToHeight(50);
-			ball_obj.set({
-				top: ball_y, left: ball_x
-			});
-			canvas.add(ball_obj);
+	fabric.Image.fromURL("ball.png", function (Img) {
+		ball_obj = Img;
+		ball_obj.scaleToWidth(50);
+		ball_obj.scaleToHeight(50);
+		ball_obj.set({
+			top: ball_y, left: ball_x
 		});
-	}
+		canvas.add(ball_obj);
+	});
 }
 
 window.addEventListener("keydown", my_keydown);
